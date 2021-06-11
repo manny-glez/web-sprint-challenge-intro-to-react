@@ -30,7 +30,7 @@ const App = () => {
       <Header />
       <div className="characters">
         {characters.map(charObj => {
-          return <Character name={charObj.name}/>
+          return <Character key={charObj.name} name={charObj.name}/>
         })}
       </div>
     </div>
